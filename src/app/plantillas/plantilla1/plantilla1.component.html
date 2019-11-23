@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12" [ngSwitch]="plantilla.A">
+      <app-segmento-a1 *ngSwitchCase="1">
+      </app-segmento-a1>
+      <app-segmento-a2 *ngSwitchCase="2">
+      </app-segmento-a2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6" [ngSwitch]="plantilla.B">
+      <app-segmento-b1 *ngSwitchCase="1">
+      </app-segmento-b1>
+      <app-segmento-b2 *ngSwitchCase="2">
+      </app-segmento-b2>
+    </div>
+    <div class="col-6" [ngSwitch]="plantilla.C">
+      <app-segmento-c1 *ngSwitchCase="1"></app-segmento-c1>
+      <app-segmento-c2 *ngSwitchCase="2">
+      </app-segmento-c2>
+    </div>
+  </div>
+</div>

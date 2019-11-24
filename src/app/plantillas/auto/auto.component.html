@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <app-informacion></app-informacion>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <app-suv *ngIf="auto.modelo == 'Blazer' || auto.modelo == 'Cheroke'"></app-suv>
+      <app-deportivo *ngIf="auto.modelo == 'Camaro' || auto.modelo == 'Mustang'"></app-deportivo>
+      <app-compacto *ngIf="auto.modelo == 'Forte' || auto.modelo == 'Sentra'"></app-compacto>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <app-promocion1 *ngIf="fecha >= 0 && fecha < 4"></app-promocion1>
+      <app-promocion2 *ngIf="fecha >= 4 && fecha < 8"></app-promocion2>
+      <app-promocion3 *ngIf="fecha >= 8 && fecha < 12"></app-promocion3>
+    </div>
+  </div>
+</div>
